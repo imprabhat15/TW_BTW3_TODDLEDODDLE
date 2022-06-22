@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toddle doddle</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=My+Soul&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="webintro">
+            <div class="logo">
+                <img src="../img/navbar/Logo1.png" alt="" width="60px" height="60px">
+            </div>
+            <div class="website-name">
+                <img src="../img/navbar/webname.png" alt="" width="70px" height="50px">
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" class="search-box" placeholder="search products...">
+            <button class="search-btn">search</button>
+        </div>
+
+        <ul id="midnav">
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#products">Products</a></li>
+            <li class="item"><a href="#food">Foods</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div id="logcart">
+            <div class="login">
+                <a href="#">
+                    <img alt="Qries" src="../img/navbar/user.png" width="25px" height="25px">
+                </a>
+            </div>
+            <div class="addtocart">
+                <a href="#">
+                    <img alt="Qries" src="../img/navbar/addtocart.png" width="25px" height="25px">
+                </a>
+            </div>
+        </div>
+        <div id="cont" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+    <section id="home">
+        <h2 class="quote">"Twinkle Twinkle little star... Do you know how loved you are?
+            ”</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="../img/slider/Slide1.png" alt="" width="980px" height="300px">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="../img/slider/Slide2.png" alt="" width="980px" height="300px">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="../img/slider/Slide3.png" alt="" width=980px" height="300px">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="../img/slider/Slide4.png" alt="" width="980px" height="300px">
+                    </a>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </div>
+    </section>
+    <section id="products">
+        <h2 class="h-secondary">OUR PRODUCTS</h2>
+        <div id="ourproducts">
+            <div class="productbox">
+                <a href="../profileselector/clothing/index_clothing.html" target="_blank">
+                    <img src="../img/product/clothing.png" alt="">
+                    <h2 class="h-secondary-center">Clothing</h2>
+                    <p>Lorem ipsum dolor sit amet sit ametp</p>
+                </a>
+            </div>
+            <div class="productbox">
+                <a href="#">
+                    <img src="../img/product/Toys.png" alt="">
+                    <h2 class="h-secondary-center">Toys</h2>
+                    <p>Lorem ipsum dolor sit amet sit ametp</p>
+                </a>
+            </div>
+            <div class="productbox">
+                <a href="#">
+                    <img src="../img/product/bathing.png" alt="">
+                    <h2 class="h-secondary-center">Bathing</h2>
+                    <p>Lorem ipsum dolor sit amet sit ametp</p>
+                </a>
+            </div>
+            <div class="productbox">
+                <a href="#">
+                    <img src="../img/product/feeding.png" alt="">
+                    <h2 class="h-secondary-center">Feeding</h2>
+                    <p>Lorem ipsum dolor sit amet sit ametp</p>
+                </a>
+            </div>
+            <div class="productbox">
+                <a href="../profileselector/footwear/footwear/index_footwear.html" target="_blank">
+                    <img src="../img/product/footwear.png" alt="">
+                    <h2 class="h-secondary-center">Footwear</h2>
+                    <p>Lorem ipsum dolor sit ametp sit ametp
+                </a>
+            </div>
+            <div class="productbox">
+                <a href="#">
+                    <img src="../img/product/Bedding.png" alt="">
+                    <h2 class="h-secondary-center">Bedding</h2>
+                    <p>Lorem ipsum dolor sit amet sit ametp</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="toys">
+        <h2 class="h-secondary">Toys</h2>
+        <div class="ourtoys">
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/softtoys.png" alt="">
+                    <h2 class="h2-third">Soft Toys</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/handmade.png" alt="">
+                    <h2 class="h2-third">Handmade Wooden Toys</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/KidsPuzzle.png" alt="">
+                    <h2 class="h2-third">Kids Puzzles</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/toyvehicles.png" alt="">
+                    <h2 class="h2-third">Cars Trains & Vehicles</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/dolls.png" alt="">
+                    <h2 class="h2-third">Doll & Doll Houses</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/Teddy.png" alt="">
+                    <h2 class="h2-third">Teddy Bear</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/Musicaltoys.png" alt="">
+                    <h2 class="h2-third">Musical Toys</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/Educationaltoys.png" alt="">
+                    <h2 class="h2-third">Educational Toys</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="toybox">
+                <a href="#">
+                    <img src="../img/toys/blockstoys.png" alt="">
+                    <h2 class="h2-third">Blocks & Construction Sets</h2>
+                    <button class="toy-btn">SHOP NOW</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="bath">
+        <h2 class="h-secondary">Bathing</h2>
+        <div class="bath-products">
+            <div class="bathbox">
+                <a href="#">
+                    <img src="../img/bath/bodywash.png" alt="">
+                    <h2 class="h2-third">Body wash</h2>
+                    <button class="bath-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bathbox">
+                <a href="#">
+                    <img src="../img/bath/shampoo.png" alt="">
+                    <h2 class="h2-third">shampoo & Conditioners</h2>
+                    <button class="bath-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bathbox">
+                <a href="#">
+                    <img src="../img/bath/babylotion.png" alt="">
+                    <h2 class="h2-third">Body Lotion</h2>
+                    <button class="bath-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bathbox">
+                <a href="#">
+                    <img src="../img/bath/bathtub.png" alt="">
+                    <h2 class="h2-third">Bathtubs & Slings</h2>
+                    <button class="bath-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bathbox">
+                <a href="#">
+                    <img src="../img/bath/bathingaccessories.png" alt="">
+                    <h2 class="h2-third">Bathing Accessories</h2>
+                    <button class="bath-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bathbox">
+                <a href="#">
+                    <img src="../img/bath/bathrobesandtowel.png" alt="">
+                    <h2 class="h2-third">Bath Robes & Towels</h2>
+                    <button class="bath-btn">SHOP NOW</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="food">
+        <h2 class="h-secondary">Feeding</h2>
+        <div class="food-products">
+            <div class="foodbox">
+                <a href="#">
+                    <img src="../img/food/Food.png" alt="">
+                    <h2 class="h2-third">Baby Food</h2>
+                    <button class="food-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="foodbox">
+                <a href="#">
+                    <img src="../img/food/bottles.png" alt="">
+                    <h2 class="h2-third">Feeding Bottles & Teats</h2>
+                    <button class="food-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="foodbox">
+                <a href="#">
+                    <img src="../img/food/bibsandhanky.png" alt="">
+                    <h2 class="h2-third">Bibs And Hanky</h2>
+                    <button class="food-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="foodbox">
+                <a href="#">
+                    <img src="../img/food/sipper.png" alt="">
+                    <h2 class="h2-third">Sippers & Cups</h2>
+                    <button class="food-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="foodbox">
+                <a href="#">
+                    <img src="../img/food/feedingaccessories.png" alt="">
+                    <h2 class="h2-third">Feeding Accessories</h2>
+                    <button class="food-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="foodbox">
+                <a href="#">
+                    <img src="../img/food/dishes.png" alt="">
+                    <h2 class="h2-third">Dishes & Utensils</h2>
+                    <button class="food-btn">SHOP NOW</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="bed">
+        <h2 class="h-secondary">Bedding</h2>
+        <div class="bed-products">
+            <div class="bedbox">
+                <a href="#">
+                    <img src="../img/bed/quiltandblanket.png" alt="">
+                    <h2 class="h2-third">Baby Quilt and Blankets</h2>
+                    <button class="bed-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bedbox">
+                <a href="#">
+                    <img src="../img/bed/Mattress.png" alt="">
+                    <h2 class="h2-third">Baby Mattress</h2>
+                    <button class="bed-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bedbox">
+                <a href="#">
+                    <img src="../img/bed/PillowsandBlosters.png" alt="">
+                    <h2 class="h2-third">Pillow & Bolster</h2>
+                    <button class="bed-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bedbox">
+                <a href="#">
+                    <img src="../img/bed/cribsandcot.png" alt="">
+                    <h2 class="h2-third">Crib and cot</h2>
+                    <button class="bed-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bedbox">
+                <a href="#">
+                    <img src="../img/bed/furniture.png" alt="">
+                    <h2 class="h2-third">Baby Furniture</h2>
+                    <button class="bed-btn">SHOP NOW</button>
+                </a>
+            </div>
+            <div class="bedbox">
+                <a href="#">
+                    <img src="../img/bed/Pramsandstrollers.png" alt="">
+                    <h2 class="h2-third">Prams and Strollers</h2>
+                    <button class="bed-btn">SHOP NOW</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us...</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9199607778</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>btw3@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#contact">contact us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="../profileselector/clothing/index_clothing.html" target="_blank">clothing</a></li>
+                        <li><a href="#toys">Toys</a></li>
+                        <li><a href="../profileselector/footwear/index_footwear.html" target="_blank">Footwear</a></li>
+                        <li><a href="#food">Feeding</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   </footer>
+    <footer>
+        <p class="copyright">Copyright &copy; 2022 - Client Name. All Rights Reserved. || Magically Created by
+              <a href=" https://www.thewizards.me" target="_blank">
+                <img class="logo-bottom" src="../img/footer/wiz.png">The&nbsp;Wizards
+              </a>
+        </p>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../JS/script.js"></script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+</body>
+
+</html>
