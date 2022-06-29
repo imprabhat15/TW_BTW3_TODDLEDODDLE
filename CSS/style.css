@@ -412,7 +412,7 @@ body {
     left: 0px;
     height: 1283px;
     width: 100%;
-    background: url('../img/backgr/toys.jpeg') no-repeat center center/cover;
+    background: #ade09b no-repeat center center/cover;
     z-index: -4;
     opacity: 0.65;
 }
@@ -489,7 +489,7 @@ body {
     left: 0px;
     height: 933px;
     width: 100%;
-    background: url('../img/backgr/bath.jpeg') no-repeat center center/cover;;
+    background: #96cbd2 no-repeat center center/cover;;
     z-index: -4;
     opacity: 0.65;
 }
@@ -569,7 +569,7 @@ body {
     left: 0px;
     height: 933px;
     width: 100%;
-    background: url('../img/backgr/food.jpeg') no-repeat center center/cover;
+    background: #d3e088 no-repeat center center/cover;
     z-index: -4;
     opacity: 0.65;
 }
@@ -650,7 +650,7 @@ body {
     left: 0px;
     height: 933px;
     width: 100%;
-    background: url('../img/backgr/bed.png')no-repeat center center/cover;
+    background: #c2a178 no-repeat center center/cover;
     z-index: -4;
     opacity: 0.65;
 }
@@ -1108,6 +1108,28 @@ footer .copyright .logo-bottom {
         z-index: -4;
         opacity: 0.65;
     }
+    /* Contact Section  */
+#contact {
+    position: relative;
+    min-height: 50vh;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: url('../img/backgr/contact.png') no-repeat center center/cover;
+}
+
+
+.text {
+    display: flex;
+    margin-left: 4px;
+    font-size: 14px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
 }
 
 @media only screen and (min-width:570px) and (max-width:870px) {
@@ -1293,6 +1315,28 @@ footer .copyright .logo-bottom {
         z-index: -4;
         opacity: 0.65;
     }
+/* Contact Section  */
+#contact {
+    position: relative;
+    min-height: 50vh;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: url('../img/backgr/contact.png') no-repeat center center/cover;
+}
+
+
+.text {
+    display: flex;
+    margin-left: 4px;
+    font-size: 14px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
 
 }
 @media only screen and (max-width:570px) {
@@ -1535,8 +1579,8 @@ footer .copyright .logo-bottom {
 /* Contact Section  */
 #contact {
     position: relative;
-    min-height: 100vh;
-    padding: 50px 30px;
+    min-height: 50vh;
+    padding: 40px 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
