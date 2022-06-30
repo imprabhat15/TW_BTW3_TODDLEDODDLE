@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -283,10 +287,9 @@ body {
 .swiper-slide img {
     width: 100%;
 }
-
-/* .swiper .swiper-button-prev, .swiper .swiper-button-next {
-    color: rgb(3, 2, 2);
-} */
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: #fff;
+} 
 
 .swiper .swiper-pagination-bullet-active {
     background: #ffce64
@@ -845,8 +848,10 @@ footer{
     align-items: center;
 	flex-wrap: wrap;
 }
+
+
 ul{
-	list-style: none;
+	list-style:none;
 }
 .footer{
 	background-color: #24262b;
@@ -903,7 +908,7 @@ ul{
     width: 20%;
     display: flex;
     flex-direction: column;
-     justify-content: center;
+    justify-content: center;
     align-items: center; 
  }
  
@@ -928,6 +933,7 @@ footer {
     padding: 0.1rem 0;
     text-align: center;
     color:white;
+    border-top: 1px solid rgb(123, 118, 201);
 }
 .copyright{
     font-size: larger;
@@ -947,7 +953,7 @@ footer .copyright a {
 
 footer .copyright a:hover {
     color: #4619d0;
-    font-weight: 800;
+    box-shadow: 0 0 2px 2px #4619d0;
 }
 
 footer .copyright .logo-bottom {
@@ -961,6 +967,38 @@ footer .copyright .logo-bottom {
 
 
 /*Adding Media Queries*/
+@media only screen and (min-width:1070px){
+    #contact {
+        position: relative;
+        min-height: 50vh;
+        padding: 40px 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        background: url('../img/backgr/contact.png') no-repeat center center/cover;
+    }
+    
+    
+    .text {
+        display: flex;
+        margin-left: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+    }
+    .text p{
+        margin: 0;
+    }
+    .box {
+        position: relative;
+        padding: 20px 120px;
+        display: flex;
+        
+    }
+}
 @media only screen and (min-width:870px) and (max-width:1070px) {
     .search {
         width: 220px;
@@ -1031,7 +1069,11 @@ footer .copyright .logo-bottom {
         height: 140px;
         width: 98%;
     }
-
+    .bath-products {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1190px;
+    }
     #bath::before {
         content: "";
         position: absolute;
@@ -1039,7 +1081,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1270px;
         width: 100%;
-        background: url('../img/backgr/bath.jpeg') no-repeat center center/cover;
+        background: #96cbd2 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1063,7 +1105,11 @@ footer .copyright .logo-bottom {
         height: 140px;
         width: 98%;
     }
-
+    .food-products {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1190px;
+    }
     #food::before {
         content: "";
         position: absolute;
@@ -1071,7 +1117,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1270px;
         width: 100%;
-        background: url('../img/backgr/food.jpeg') no-repeat center center/cover;
+        background: #d3e088 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1096,7 +1142,11 @@ footer .copyright .logo-bottom {
         height: 140px;
         width: 98%;
     }
-
+    .bed-products {
+        display: flex;
+        flex-wrap: wrap;
+        height: 1190px;
+    }
     #bed::before {
         content: "";
         position: absolute;
@@ -1104,7 +1154,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1270px;
         width: 100%;
-        background: url('../img/backgr/bed.png') no-repeat center center/cover;
+        background: #c2a178 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1124,10 +1174,20 @@ footer .copyright .logo-bottom {
 .text {
     display: flex;
     margin-left: 4px;
+    margin-top: 10px;
     font-size: 14px;
     color: #fff;
     flex-direction: column;
     font-weight: 300;
+}
+.text p{
+    margin: 0;
+}
+.box {
+    position: relative;
+    padding: 20px 120px;
+    display: flex;
+    
 }
 
 }
@@ -1241,7 +1301,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1270px;
         width: 100%;
-        background: url('../img/backgr/bath.jpeg') no-repeat center center/cover;
+        background: #96cbd2 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1276,7 +1336,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1270px;
         width: 100%;
-        background: url('../img/backgr/food.jpeg') no-repeat center center/cover;
+        background: #d3e088 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1311,7 +1371,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1270px;
         width: 100%;
-        background: url('../img/backgr/bed.png') no-repeat center center/cover;
+        background:  #c2a178 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1331,10 +1391,20 @@ footer .copyright .logo-bottom {
 .text {
     display: flex;
     margin-left: 4px;
+    margin-top: 10px;
     font-size: 14px;
     color: #fff;
     flex-direction: column;
     font-weight: 300;
+}
+.text p{
+    margin: 0;
+}
+.box {
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+    
 }
 
 
@@ -1387,6 +1457,7 @@ footer .copyright .logo-bottom {
         width: 70%;
         height: fit-content;
     }
+
     .h-secondary {
         font-size: 1.8rem;
         font-weight: bolder;
@@ -1486,7 +1557,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1130px;
         width: 100%;
-        background: url('../img/backgr/bath.jpeg') no-repeat center center/cover;
+        background: #96cbd2 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1521,7 +1592,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1130px;
         width: 100%;
-        background: url('../img/backgr/food.jpeg') no-repeat center center/cover;
+        background: #d3e088 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1556,7 +1627,7 @@ footer .copyright .logo-bottom {
         left: 0px;
         height: 1030px;
         width: 100%;
-        background: url('../img/backgr/bed.png') no-repeat center center/cover;
+        background:  #c2a178 no-repeat center center/cover;
         z-index: -4;
         opacity: 0.65;
     }
@@ -1592,10 +1663,20 @@ footer .copyright .logo-bottom {
 .text {
     display: flex;
     margin-left: 4px;
+    margin-top: 10px;
     font-size: 14px;
     color: #fff;
     flex-direction: column;
     font-weight: 300;
+}
+.text p{
+    margin: 0;
+}
+.box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    
 }
 
 }
