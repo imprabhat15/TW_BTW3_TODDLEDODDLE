@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=My+Soul&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
@@ -38,22 +39,32 @@
             <li class="item"><a href="#food">Foods</a></li>
             <li class="item"><a href="#contact">Contact Us</a></li>
         </ul>
-        <div id="logcart">
-            <div class="login">
-                <a href="#">
-                    <img alt="Qries" src="../img/navbar/user.png" width="25px" height="25px">
-                </a>
+        <div class="comblogcartmenubar">
+            <div id="logcart">
+                <div class="login">
+                    <a href="#">
+                        <img alt="Qries" src="../img/navbar/user.png" width="25px" height="25px">
+                    </a>
+                </div>
+                <div class="addtocart">
+                    <a href="#">
+                        <img alt="Qries" src="../img/navbar/addtocart.png" width="25px" height="25px">
+                    </a>
+                </div>
             </div>
-            <div class="addtocart">
-                <a href="#">
-                    <img alt="Qries" src="../img/navbar/addtocart.png" width="25px" height="25px">
-                </a>
+            <div id="cont" onclick="myFunction(this)">
+                <div class="bar1" onclick="myFunction(this)"></div>
+                <div class="bar2" onclick="myFunction(this)"></div>
+                <div class="bar3" onclick="myFunction(this)"></div>
             </div>
-        </div>
-        <div id="cont" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+            <div class="hamburger">
+                <ul>
+                    <li class="item"><a href="#home">Home</a></li>
+                    <li class="item"><a href="#products">Products</a></li>
+                    <li class="item"><a href="#food">Foods</a></li>
+                    <li class="item"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <section id="home">
@@ -405,27 +416,26 @@
     </section>
     <footer class="footer">
         <div class="footer-container">
+            <div class=".footer-col">
+                <img src="../img/footer/webname.png" alt="" width="120px" height="120px">
+            </div>
             <div class="row">
-                <div class="web-name">
-                    <img src="../img/footer/webname.png" alt="" width="120px" height="120px">
-                </div>
                 <div class="footer-col">
                     <h4>company</h4>
                     <ul>
-                        <li><a href="#">about us</a></li>
+                        <li><a href="#home">about us</a></li>
                         <li><a href="#contact">contact us</a></li>
-                        <li><a href="#">our services</a></li>
-                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#home">our services</a></li>
+                        <li><a href="#home">privacy policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>get help</h4>
                     <ul>
-                        
-                        <li><a href="#">shipping</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">order status</a></li>
-                        <li><a href="#">payment options</a></li>
+                        <li><a href="#home">shipping</a></li>
+                        <li><a href="#home">returns</a></li>
+                        <li><a href="#home">order status</a></li>
+                        <li><a href="#home">payment options</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -449,23 +459,18 @@
             </div>
         </div>
 
-   </footer>
+    </footer>
     <footer>
         <p class="copyright">Copyright &copy; 2022 - Client Name. All Rights Reserved. || Magically Created by
-              <a href=" https://www.thewizards.me" target="_blank">
+            <a href=" https://www.thewizards.me" target="_blank">
                 <img class="logo-bottom" src="../img/footer/wiz.png">The&nbsp;Wizards
-              </a>
+            </a>
         </p>
     </footer>
 
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../JS/script.js"></script>
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>
 </body>
 
 </html>
